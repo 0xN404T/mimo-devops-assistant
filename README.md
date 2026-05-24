@@ -44,3 +44,15 @@ The assistant returns:
 
 ## Why Xiaomi MiMo
 This project demonstrates MiMo as a practical coding and operations assistant for real Linux server workflows.
+
+## Project Maturity
+- MVP code available
+- Architecture documented
+- Roadmap documented
+- CI configured
+- MIT licensed
+
+## Links
+- [Architecture](ARCHITECTURE.md)
+- [Roadmap](ROADMAP.md)
+- [Examples](examples/basic.md)
