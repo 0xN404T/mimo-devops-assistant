@@ -1,15 +1,46 @@
-# mimo-devops-assistant
+# MiMo DevOps Assistant
 
-Real prototype for Xiaomi MiMo 100T creator program.
+MiMo DevOps Assistant is a Linux CLI diagnostic assistant powered by Xiaomi MiMo API.
 
-## Purpose
-This project demonstrates practical Xiaomi MiMo API usage for developer workflows.
+## Problem
+Small developers often manage servers alone. Debugging disk, memory, Docker, systemd, or network problems can be slow and risky, especially when copying random commands from the internet.
 
-## Run
-See source files and `.env.example`.
+## Solution
+This tool collects safe diagnostic output from the server and asks MiMo to explain the issue and suggest safe next steps.
 
-## Status
-Working MVP skeleton with real code paths, environment config, and CLI/API entrypoints.
+## Core Features
+- Disk usage diagnostics
+- Memory diagnostics
+- Top process summary
+- MiMo-powered explanation
+- Safe-action focused prompt
 
-## Author
-0xN404T
+## Architecture
+1. CLI runs safe read-only Linux commands
+2. Output is combined into diagnostic context
+3. MiMo analyzes server state
+4. CLI prints recommended fixes
+
+## Example Use Case
+```bash
+python devops_assistant.py diagnose
+```
+The assistant returns:
+- likely cause
+- safe cleanup commands
+- commands to avoid
+- next verification step
+
+## Files
+- `devops_assistant.py` — Typer CLI app
+- `requirements.txt` — Python dependencies
+
+## Roadmap
+- Docker diagnostics
+- systemd service analyzer
+- log summarizer
+- interactive fix mode
+- server health report export
+
+## Why Xiaomi MiMo
+This project demonstrates MiMo as a practical coding and operations assistant for real Linux server workflows.
