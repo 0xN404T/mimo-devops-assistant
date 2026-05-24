@@ -1,17 +1,15 @@
-# MiMo DevOps Assistant
+# mimo-devops-assistant
 
-CLI assistant for Linux server diagnostics using Xiaomi MiMo API.
+Real prototype for Xiaomi MiMo 100T creator program.
 
-## Features
-- Explains logs and errors
-- Suggests safe cleanup commands
-- Generates deployment checklists
-- Helps debug Docker, systemd, and networking issues
+## Purpose
+This project demonstrates practical Xiaomi MiMo API usage for developer workflows.
 
-## Tech Stack
-- Python CLI
-- Linux shell tools
-- Xiaomi MiMo API
+## Run
+See source files and `.env.example`.
 
 ## Status
-Prototype planned for Xiaomi MiMo 100T creator program.
+Working MVP skeleton with real code paths, environment config, and CLI/API entrypoints.
+
+## Author
+0xN404T
